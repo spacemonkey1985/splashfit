@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>Splash Fit - The Gym</title>
+<link type="text/css" href="stylesheets/common.css" rel="stylesheet" />
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript">   
+	function initialize() {     
+		var latlng = new google.maps.LatLng(52.94190140017342, -1.4643573760986328);     
+		var myOptions = {      
+			zoom: 16,       
+			center: latlng,       
+			mapTypeId: google.maps.MapTypeId.ROADMAP     
+			};     
+		
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		
+		//setMarkers(map, beaches); 
+		
+		var marker = new google.maps.Marker({       
+			position: latlng,       
+			title:"Splash Fit"   
+		});
+		
+		marker.setMap(map);
+	}
+	
+	var beaches = [['Splash Fit', 52.94190140017342, -1.4643573760986328]]; 
+	
+	function setMarkers(map, locations) {   
+		// Add markers to the map    
+		// Marker sizes are expressed as a Size of X,Y   
+		// where the origin of the image (0,0) is located   
+		// in the top left of the image.    
+		// Origins, anchor positions and coordinates of the marker   
+		// increase in the X direction to the right and in   
+		// the Y direction down.   
+		
+		var image = new google.maps.MarkerImage('images/beachflag.png',       
+		// This marker is 20 pixels wide by 32 pixels tall.       
+		new google.maps.Size(20, 32),       
+		// The origin for this image is 0,0.       
+		new google.maps.Point(0,0),       
+		// The anchor for this image is the base of the flagpole at 0,32.       
+		new google.maps.Point(0, 32));   
+		var shadow = new google.maps.MarkerImage('images/beachflag_shadow.png',       
+		// The shadow image is larger in the horizontal dimension       
+		// while the position and offset are the same as for the main image.       
+		new google.maps.Size(37, 32),       
+		new google.maps.Point(0,0),       
+		new google.maps.Point(0, 32));       
+		// Shapes define the clickable region of the icon.       
+		// The type defines an HTML <area> element 'poly' which       
+		// traces out a polygon as a series of X,Y points. The final       
+		// coordinate closes the poly by connecting to the first       
+		// coordinate.   
+		var shape = {       
+			coord: [1, 1, 1, 20, 18, 20, 18 , 1],      
+			type: 'poly'   
+		};   
+		
+		for (var i = 0; i < locations.length; i++) {     
+			var beach = locations[i];     
+			var myLatLng = new google.maps.LatLng(beach[1], beach[2]);     
+			var marker = new google.maps.Marker({         
+				position: myLatLng,         
+				map: map,         
+				shadow: shadow,         
+				icon: image,         
+				shape: shape,         
+				title: beach[0],         
+				zIndex: beach[3]     
+			});   
+		} 
+	}
+</script>
+</head>
+<body onload="initialize()"> 
+	<div class="connections">
+    	<div class="connection-icons">
+            <ul>
+                <li><a href="http://www.facebook.com/profile.php?id=100001502215973"><img src="images/fb-icon.png" alt="Facebook" border="0" /></a></li>
+                <li><a href="http://twitter.com/#!/splashfit"><img src="images/tw-icon.png" alt="Twitter" border="0" /></a></li>
+                <li><a href="#"><img src="images/yt-icon.png" alt="YouTube" border="0" /></a></li>
+            </ul>
+        </div>
+    </div>
+	<div class="header">
+    	<div class="header-content">
+            <img src="images/logo.png" alt="Gym Logo" />
+            <div class="top-menu">
+            	<ul>
+                	<li><a href="http://www.splashfit.co.uk">SPLASHFIT.CO.UK</a></li>
+                    <li><a href="contact.htm">CONTACT US</a></li>
+                    <li><a href="testimonials.php">TESTIMONIALS</a></li>
+                    <li><a href="links.php">LINKS</a></li>
+                </ul>
+            </div>
+            <div class="tabs">
+            	<ul>
+                	<li><a href="index.htm">HOME</a></li>
+                    <li><a href="index.htm">CLASS INFO</a></li>
+                    <li><a href="index.htm">ACTIVITIES</a></li>
+                    <li><a href="index.htm">SCHOOLS</a></li>
+                    <li><a href="index.htm">NEWS</a></li>
+                    <li><a href="index.htm">GALLERY</a></li>
+                    <li><a href="index.htm">SHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="tab-bar">
+    	<div class="tab-bar-content">
+
+        </div>
+    </div>
+    <div class="breadcrumbs">
+    	<div class="breadcrumbs-content">
+        	<a href="index.htm">HOME</a>&nbsp;&gt;&nbsp;CONTACT US
+        </div>
+    </div>
+    <div class="spacer">
+    
+    </div>
+    
+    <div class="content">
+    	<div class="columns">
+        	<div style="width: 420px; position: absolute; left: 60px; top: 10px;">
+            	<div style="position: absolute; left: -60px; top: 0px; z-index: -1;">
+                	<img src="images/Gym-Logo-Faded.png" alt="Gym Logo" />
+                </div>
+            	<h2>Contact US</h2>
+                <b>Splash Fit</b><br />
+                Unit 8, Perkins Yard<br />
+                Mansfield Rd<br />
+                Derby<br />
+                DE21 4AW
+                <br />
+                <br />
+                <div style="position: absolute; left: -60px; top: 155px">
+                	<img src="images/call-icon.png" alt="Phone Icon" />
+                </div>
+                <h2>Telephone</h2>
+                01332 203081<br />
+                07791 665141
+                <div style="position: absolute; left: -60px; top: 270px">
+                	<img src="images/email-icon.png" alt="Email Icon" />
+                </div>
+                <h2>Email</h2>
+                <a href="mailto:thegym@splashfit.co.uk">thegym@splashfit.co.uk</a>
+            </div>
+            <div style="width: 420px; position: absolute; left: 560px; top: 10px;">
+            	<div style="position: absolute; left: -60px; top: -5px">
+                	<img src="images/location-icon.png" alt="Location Icon" />
+                </div>
+                <h2>Location</h2>
+                <div id="map_canvas" style="width:420px; height:420px;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<photos>
+	<photo>
+		<thumbnail>pool01_t.jpg</thumbnail>
+		<filename>pool01.jpg</filename>
+		<title>SplashFit Pool</title>
+		<description>
+		This is a photo of the SplashFit Pool.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>pool02_t.jpg</thumbnail>
+		<filename>pool02.jpg</filename>
+		<title>SplashFit Pool</title>
+		<description>
+		This is a photo of the SplashFit Pool.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>pool03_t.jpg</thumbnail>
+		<filename>pool03.jpg</filename>
+		<title>SplashFit Pool</title>
+		<description>
+		This is a photo of the SplashFit Pool.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>pool04_t.jpg</thumbnail>
+		<filename>pool04.jpg</filename>
+		<title>SplashFit Pool</title>
+		<description>
+		This is a photo of the SplashFit Pool.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>pool05_t.jpg</thumbnail>
+		<filename>pool05.jpg</filename>
+		<title>SplashFit Pool</title>
+		<description>
+		This is a photo of the SplashFit Pool.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>pool06_t.jpg</thumbnail>
+		<filename>pool06.jpg</filename>
+		<title>SplashFit Pool</title>
+		<description>
+		This is a photo of the SplashFit Pool.
+		</description>
+	</photo>
+	<photo>
+		<thumbnail>pool07_t.jpg</thumbnail>
+		<filename>pool07.jpg</filename>
+		<title>SplashFit Pool</title>
+		<description>
+		This is a photo of the SplashFit Pool.
+		</description>
+	</photo>
+</photos>
